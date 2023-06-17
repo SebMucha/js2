@@ -191,6 +191,7 @@
       let submitData = document.querySelector("#submitData");
 
       submitData.addEventListener("click", (e) => {
+        e.preventDefault();
         let email = document.querySelector("#email").value;
         let password = document.querySelector("#psw").value;
 

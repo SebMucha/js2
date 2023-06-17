@@ -157,7 +157,6 @@
       <div class="black_line">©2035 by WeDu. Powered and secured by Saba</div>
     </footer>
 
-    <script src="./js/log_in.js"></script>
     <script type="module">
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
       import {
@@ -188,6 +187,7 @@
       let submitData = document.querySelector("#submitData");
 
       submitData.addEventListener("click", (e) => {
+        e.preventDefault();
         let email = document.querySelector("#email").value;
         let password = document.querySelector("#psw").value;
 
