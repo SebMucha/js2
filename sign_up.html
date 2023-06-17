@@ -161,7 +161,6 @@
       <div class="black_line">©2035 by WeDu. Powered and secured by Saba</div>
     </footer>
 
-    <script src="./js/log_in.js"></script>
     <script type="module">
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
       import {
@@ -204,6 +203,9 @@
             })
               .then(() => {
                 alert("User Created Successfully ");
+                setTimeout(() => {
+                  window.location.href = "log_in.html";
+                }, 1000);
               })
               .catch((error) => {
                 alert(error);
